@@ -1,5 +1,7 @@
 #pragma rtGlobals=1		// Use modern global access method.
 
+// here is an example comment
+
 //#include "Multi-peak fitting 1.4"
 
 Macro PeakDetectionPanel() : Panel
