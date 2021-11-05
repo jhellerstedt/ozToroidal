@@ -1,0 +1,64 @@
+############################################ V1.1 Changes ##############################
+
+Azscan:
+
+- Use full phi range checkbox: allows the user to process the full range of phi angles present in the data, following the rules above too for range limits. When checked, the values are entered automatically and the start/end phi range setvariable fields are greyed out
+
+
+############################################ V1.0 Changes ##############################
+
+ARPESPanel
+
+- Now renamed to "Toroidal Analyser_Vxx.yy". Macro renamed and left in macros menu now with version number included
+
+- All scan GUIS removed from macros menu and located as buttons onto the ToroidalAnalyser GUI (clean up macros menu)
+
+-Correct Spikes now works to remove horizontal artifacts (select the vertical cursor and perform usual smooothing as per spike removal). Useful for removing intensity glitches during Azscans
+- Included the CrystalProcs.ipf file and added a launcher button on the GUI
+- Cosmetic changes to GUI
+- Fixed the header display (rows not getting cutoff anymore)
+- Changelog notebook now included when launching :)
+
+EDC:
+
+- Autocalculate button: Determines the optimum number of k parallel increments to use based on delta theta and KE range
+
+- EDC mapping to kparallel works for aribtrary theta range now
+
+- Added Fermifit panel launcher to EDC GUI
+
+- Cosmetic changes: Some existing buttons moved and renamed
+
+- k parallel plot changes: labels, free dimensioning for horizontal and vertical. Font size scales with graph size. User to set final graph settings manually if exporting. 
+
+AzScan
+
+- Use Centre KE checkbox: to automatically identify the middle KE parameter, enter it and use it for Azscan scan extraction
+
+- Reduced theta range now works properly
+
+- Extracted azsscans now have the actual phi range instead of a pseudo range starting from 0
+
+- When Symetrise checkbox is selected, Phinorm checkbox is deselected and greyed out
+
+- Parameter limitation and associated alert messages for the start and end azimuth fields. 
+	> User cannot enter end azimuth < start azimuth
+	> User cannot enter start or end azimuths outside the scan range. 
+	> For using both emission directions, user cannot select more than 180 degrees in phi
+
+- Use full phi range checkbox: allows the user to process the full range of phi angles present in the data, following the rules above too for range limits. When checked, the values are entered automatically and the start/end phi range setvariable fields are greyed out
+
+- Now can process scans using negative phi values. As part of doing this, a complete overhaul of processing routine to properly plot emission distribtion with respect to the sample holder was needed. By default, the emission distribution is now plotted with respect to the sample holder. Negative angles and positive angles, and direction of rotation, now make sense with respect to real detection directions from the sample.
+
+- Existing buttons renamed, and moved on the panel
+
+- When "use all emission directions" is selected, the symmetrisation checkbox is deselected and greyed out (may revisit if required to symmetrise +/- distributions later)
+
+- k parallel plot changes: labels, fixed 1:1 ratio for horizontal and vertical. Font size scales with graph size. User to set final graph settings manually if exporting. 
+
+
+
+
+
+
+

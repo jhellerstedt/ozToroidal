@@ -1,0 +1,5 @@
+Igor 6.37 (Windows)
+
+1) Copy the folder "ToroidalAnalyser" into: .....\Documents\WaveMetrics\Igor Pro 6 User Files\User Procedures
+2) Copy the filer "Toroidal-MAIN" into: .....\Documents\WaveMetrics\Igor Pro 6 User Files\Igor Procedures
+3) Launch main panel from the "Macros" menu
